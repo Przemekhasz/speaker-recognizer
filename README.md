@@ -37,11 +37,21 @@ This project involves a comprehensive voice processing and analysis system imple
    ```bash
    pip install numpy sounddevice matplotlib scipy librosa keras tensorflow scikit-learn SpeechRecognition pydub aiohttp python-socketio
     ```
+   **OR**
+3. Docker:
+   ```bash
+   docker build -t speaker-recognizer .
+   ```
 
 # Run the script:
 
 ```bash
-python voice_processing.py
+python main.py
+```
+
+**OR docker**
+```bash
+docker run -p 5678:5678 speaker-recognizer
 ```
 
 # Usage

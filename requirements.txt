@@ -15,3 +15,5 @@ uvicorn~=0.23.2
 aiohttp~=3.8.6
 pveagle~=0.1.0
 pvrecorder~=1.2.1
+tensorflow
+PortAudio
