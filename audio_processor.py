@@ -2,7 +2,7 @@ import librosa
 import numpy as np
 import soundfile as sf
 
-from app.audio_utils import feature_extractor
+from audio_utils import feature_extractor
 
 
 class AudioProcessor:

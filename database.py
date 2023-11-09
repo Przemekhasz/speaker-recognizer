@@ -1,6 +1,6 @@
 import numpy as np
 
-from app.utils import SingletonMeta
+from utils import SingletonMeta
 
 
 class VoiceDatabase(metaclass=SingletonMeta):

@@ -2,7 +2,7 @@ import datetime
 import random
 import sounddevice as sd
 
-from app.constants import MIC_ID
+from constants import MIC_ID
 
 
 class SingletonMeta(type):

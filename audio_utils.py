@@ -3,7 +3,7 @@ import sounddevice as sd
 import librosa
 import matplotlib.pyplot as plt
 
-from app.constants import MAX_FRAME_LENGTH, MIC_ID
+from constants import MAX_FRAME_LENGTH, MIC_ID
 
 
 def add_noise(audio_data):

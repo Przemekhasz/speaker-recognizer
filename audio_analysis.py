@@ -1,7 +1,7 @@
 import speech_recognition as sr
 from pydub import AudioSegment
 
-from app.constants import RESULT_FILENAME
+from constants import RESULT_FILENAME
 
 
 class AudioAnalyzer:
