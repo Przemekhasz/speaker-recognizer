@@ -6,6 +6,11 @@ from audio_analysis import audio_analyzer
 
 
 class ServerOperation:
+    """
+        Server operation for handling voice data over web sockets using aiohttp and socket.io.
+
+        Learn more about socket.io with Python: https://python-socketio.readthedocs.io/en/latest/
+    """
     def __init__(self):
         self.sio = socketio.AsyncServer(cors_allowed_origins="*")
         self.app = web.Application()

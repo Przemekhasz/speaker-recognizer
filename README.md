@@ -65,6 +65,39 @@ docker run -p 5678:5678 speaker-recognizer
 6. Contributing
 7. Contributions to this project are welcome. Please fork the repository and submit pull requests with your enhancements.
 
+# Running Tests
+To run the tests for the application, navigate to the project directory and execute:
+```bash
+python -m unittest discover -s tests
+```
+
+# Screenshots
+Below are various screenshots depicting different functionalities of the voice processing system:
+
+1. ### MFCC with Deltas Visualization:
+![Screenshot of feature](img/mfcc.png "Feature Screenshot")
+This image shows the MFCC feature extraction with delta coefficients visualized as a heatmap. Each column represents a time frame, while each row represents cepstral coefficients. The intensity of colors reflects the magnitude of the coefficient values.
+
+2. ### Available Audio Devices:
+![Screenshot of feature](img/audio_devices.png "Feature Screenshot")
+Here we see a list of available audio devices detected by the system. The device IDs are used to select appropriate input devices for recording audio.
+
+3. ### Recording Prompts:
+![Screenshot of feature](img/rec.png "Feature Screenshot")
+The system prompts the user to record individual and group voice samples, providing clear instructions for interaction.
+
+4. ### Model Training Progress:
+![Screenshot of feature](img/model_training.png "Feature Screenshot")
+The system prompts the user to record individual and group voice samples, providing clear instructions for interaction.
+
+5. ### Voice Identification Result:
+![Screenshot of feature](img/identyfication_result.png "Feature Screenshot")
+This console output captures the progress of the machine learning model training over epochs, displaying loss and accuracy metrics.
+
+6. ### Server Running:
+![Screenshot of feature](img/server_running.png "Feature Screenshot")
+After processing, the system outputs the result of voice identification, indicating to which group the analyzed voice sample belongs.
+
 # License
 This project is licensed under the MIT License.
 
