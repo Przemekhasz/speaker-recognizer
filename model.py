@@ -1,7 +1,15 @@
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, LSTM, Flatten, Conv2D, MaxPooling2D, Reshape
 
+
 class ModelCreator:
+    """
+        Creates a neural network model for classifying voice data.
+
+        The model uses convolutional and LSTM layers, suitable for feature-rich time-series data like audio.
+        Understanding LSTM Networks: http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+    """
+
     def create_model(self, input_shape, num_classes):
         model = Sequential()
         model.add(Conv2D(32, (3, 3), activation='relu', input_shape=input_shape))

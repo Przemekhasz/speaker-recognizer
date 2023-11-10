@@ -30,6 +30,11 @@ class AudioRecorder:
 
 
 class FeatureExtractor:
+    """
+        Extracts audio features using MFCC.
+
+        MFCC is widely used in voice recognition systems and is based on human hearing perceptions.
+    """
     def extract_features(self, filename, plot=True):
         y, sr = librosa.load(filename)
         mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=13)
